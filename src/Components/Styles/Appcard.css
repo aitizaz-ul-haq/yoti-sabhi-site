@@ -1,0 +1,37 @@
+.the-card-container {
+
+    margin-left: 0px;
+    margin-top: 44px;
+    margin-right: 214px;
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+.the-card {
+
+    margin-left: 0px;
+
+}
+
+.the-card-container.card {
+    background-color: #E0FFFF;
+}
+
+.font-title-in-card2 {
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.micros-in-card2 {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color:darkslategrey;
+}
+
+.piks {
+    width: 146px;
+    height: 61px;
+
+}

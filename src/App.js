@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+// importing react--------->
+import React from 'react';
 
+// importing components----------------->
+import Home from './Components/Homeyoti';
+import Nextpage from './Components/nextpage';
+
+// importing react router modules--------------->
+import { Switch, Route } from 'react-router-dom';
+
+// importing bootstrap css files-------------->
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// importing css style file---->
+import './Components/Styles/App.css';
+
+
+// rendering page--------------->
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="the-app">
+      <Switch>
+        <Route path="/" component={Home} exact />
+        <Route path="/Nextpage" component={Nextpage} />
+      </Switch>
     </div>
   );
 }

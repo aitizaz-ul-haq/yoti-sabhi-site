@@ -1,0 +1,46 @@
+.section-middle {
+    height: 460px;
+    width: 480px;
+    margin-left: 8px;
+    margin-bottom: 17px;
+    border-radius: 25px;
+    margin-top: 36px;
+    box-shadow:20px 20px 50px 15px grey;  
+    background-color: white;
+}
+
+.button-grouping {
+   
+    margin-left: 119px;
+    margin-top: 43px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+}
+
+.cool-link {
+    display: inline-block;
+    color: gray;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    /* transition: width .3s; */
+}
+
+.theform {
+
+    margin-left: 21px;
+    margin-top: 43px;
+
+}
+

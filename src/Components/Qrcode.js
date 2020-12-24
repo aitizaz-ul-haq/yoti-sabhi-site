@@ -10,13 +10,13 @@ function Qrcoding() {
         <QRNormal
             value="react-qrbtf"
             className="my-qrcode"
-            styles={{ svg: { width: "275px" } }}
+            styles={{ svg: { width: "233px", height: "216px" } }}
             type="round"
             size={50}
             opacity={80}
             posType="planet"
-            otherColor="#00D084"
-            posColor="#00D084"
+            otherColor="#000000"
+            posColor="#000000"
         />
     );
 

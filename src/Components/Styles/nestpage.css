@@ -22,6 +22,14 @@
     margin-top: 22px;
 }
 
+.con-scan {
+    padding: 0px;
+    width: 527px;
+    
+    height: 430px;
+   
+}
+
 .containsscanner {
     
    
@@ -29,26 +37,84 @@
 
 .containsactual {
    
-    background-color: cadetblue;
+    background-color: #26A8D4;
 }
 
 .yotiscanner {
-    
-    border-radius: 25px;
-    background-color: cyan;
+    /* border-radius: 25px; */
+    background-color: white;
+    width: 527px;
+    height: 430px;
+    box-shadow:20px 20px 50px 15px grey;  
+}
 
-    width: 513px;
-    height: 350px;
-
+.con-actul {
+    background-color: #26A8D4;
+    width: 527px;
+   
+    height: 430px;
 }
 
 .modal-content {
- 
-    border-radius: 50px;
-    margin-top: 190px;
     
+    /* border-radius: 25px; */
+    margin-top: 119px;
+    background-color: #26A8D4;
     width: 477px;
 
     height: 349px;
 
 }
+
+.scannerinhere {
+    /* border-radius: 32px; */
+    background-color: cornsilk;
+    
+    width: 233px;
+    height: 290px;
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-shadow: 5px 8px 50px 8px grey;  
+
+    margin-left: 246px;
+    margin-top: 59px;
+
+
+       
+}
+
+.listitems {
+    color:gray;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.yoti-Auth {
+
+    margin-top: 29px;
+    margin-left: 56px;
+
+}
+
+.scanner-head {
+    /* border-radius: 25px; */
+    width: 137px;
+    margin-top: 27px;
+    margin-left: 54px;
+
+}
+
+.yoti-row {
+    /* border-radius: 25px; */
+    /* width: 137px;
+    margin-top: 27px;
+    margin-left: 54px; */
+
+}
+
+.unknown {
+    /* border-radius: 25px; */
+}
+

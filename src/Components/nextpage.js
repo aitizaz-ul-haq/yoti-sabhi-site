@@ -9,7 +9,7 @@ import './Styles/nestpage.css';
 
 // importing components------------------>
 //import Pagesinmodal from './pagesinmodal';
-
+import Qrcode from './Qrcode';
 
 // rendering file------------->
 function Nexty() {
@@ -54,26 +54,53 @@ function Nexty() {
                             <br></br>
                                 <br></br>
                             Scan with Yoti to open your account &nbsp; &emsp; &emsp;<button onClick={showModal}>Display Modal</button>
-                                <Modal show={isOpen} onHide={hideModal}>
-                                    <Container fluid="xs">
-                                        <Row xs={11}>
-                                            <div className="yotiscanner">
-                                                <Row xs={11}>
-                                                    <Col xs={6}>
-                                                        <div className="containsscanner">
-                                                            <h5>helloworld</h5>
-                                                        </div>
-                                                    </Col>
-                                                    <Col xs={5}>
-                                                        <div className="containsactual">
-                                                            <h5>Scanner</h5>
-                                                        </div>
-                                                    </Col>
-                                                </Row>
-                                            </div>
-                                        </Row>
-                                    </Container>
+                                <Modal >
+                                    <Container fluid="xs" show={isOpen} onHide={hideModal}>
+                                        <div className="conatinsalot">
 
+
+                                            <Row xs={12} className="unknown">
+                                                <div className="yotiscanner">
+                                                    <Row xs={12} className="yoti-row">
+                                                        <Col xs={7} className="con-scan">
+                                                            <div className="containsscanner">
+                                                                <div className="yoti-Auth">
+                                                                    <h3>Yoti World</h3>
+                                                                    <small>is asking you to share</small>
+                                                                    <br />
+                                                                    <hr />
+                                                                    <h5 className="listitems">Given Name(s)</h5>
+                                                                    <hr />
+                                                                    <h5 className="listitems">Family Name</h5>
+                                                                    <hr />
+                                                                    <h5 className="listitems">Date of Birth</h5>
+                                                                    <hr />
+                                                                    <h5 className="listitems">Address</h5>
+                                                                    <hr />
+                                                                    <h5 className="listitems">Photo Authentication</h5>
+                                                                    <hr />
+                                                                    <h5 className="listitems">Remember My ID</h5>
+                                                                    <hr />
+                                                                </div>
+                                                            </div>
+                                                        </Col>
+                                                        <Col xs={5} className="con-actul">
+                                                            <div className="containsactual">
+
+                                                            </div>
+                                                        </Col>
+                                                        <div className="scannerinhere">
+                                                            <div className="scanner-head">
+                                                                <h5>Scan with the</h5>
+                                                                <h5>Yoti app:</h5>
+                                                            </div>
+                                                            <Qrcode />
+                                                        </div>
+                                                    </Row>
+                                                </div>
+                                            </Row>
+                                        </div>
+                                    </Container>
                                 </Modal>
                                 <br></br>
                                 <br></br>

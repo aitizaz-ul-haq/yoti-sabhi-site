@@ -2,13 +2,13 @@
 import React from 'react';
 
 // importing bootstrap components-------------------------------->
-import { Navbar, Button, Card, Accordion, Modal } from 'react-bootstrap';
+import { Navbar, Button, Card, Accordion, Modal, Container, Row, Col } from 'react-bootstrap';
 
 // importing style files------->
 import './Styles/nestpage.css';
 
 // importing components------------------>
-import Pagesinmodal from './pagesinmodal';
+//import Pagesinmodal from './pagesinmodal';
 
 
 // rendering file------------->
@@ -54,8 +54,26 @@ function Nexty() {
                             <br></br>
                                 <br></br>
                             Scan with Yoti to open your account &nbsp; &emsp; &emsp;<button onClick={showModal}>Display Modal</button>
-                                <Modal show={isOpen} onHide={hideModal} className="modaling">
-                                    <Pagesinmodal />
+                                <Modal show={isOpen} onHide={hideModal}>
+                                    <Container fluid="xs">
+                                        <Row xs={11}>
+                                            <div className="yotiscanner">
+                                                <Row xs={11}>
+                                                    <Col xs={6}>
+                                                        <div className="containsscanner">
+                                                            <h5>helloworld</h5>
+                                                        </div>
+                                                    </Col>
+                                                    <Col xs={5}>
+                                                        <div className="containsactual">
+                                                            <h5>Scanner</h5>
+                                                        </div>
+                                                    </Col>
+                                                </Row>
+                                            </div>
+                                        </Row>
+                                    </Container>
+
                                 </Modal>
                                 <br></br>
                                 <br></br>
@@ -72,6 +90,6 @@ function Nexty() {
     );
 }
 
-        
+
 
 export default Nexty;

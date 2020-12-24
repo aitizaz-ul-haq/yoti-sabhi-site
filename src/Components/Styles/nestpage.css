@@ -21,3 +21,34 @@
     margin-left: 109px;
     margin-top: 22px;
 }
+
+.containsscanner {
+    
+   
+}
+
+.containsactual {
+   
+    background-color: cadetblue;
+}
+
+.yotiscanner {
+    
+    border-radius: 25px;
+    background-color: cyan;
+
+    width: 513px;
+    height: 350px;
+
+}
+
+.modal-content {
+ 
+    border-radius: 50px;
+    margin-top: 190px;
+    
+    width: 477px;
+
+    height: 349px;
+
+}

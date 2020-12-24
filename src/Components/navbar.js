@@ -2,7 +2,7 @@
 import React from 'react';
 
 // importing bootstrap components---------->
-import Navbar from 'react-bootstrap/Navbar';
+import { Navbar, Container } from 'react-bootstrap';
 
 // importing style files------>
 import './Styles/navbar.css';
@@ -12,10 +12,12 @@ import './Styles/navbar.css';
 function Top() {
     return (
         <div>
-            <Navbar expand="lg" variant="light">
-                <button className="the-menu-button"></button>
-                <Navbar.Brand className="yoti" href="#" > Yoti-World</Navbar.Brand>
-            </Navbar>
+            <Container fluid="xs">
+                <Navbar expand="lg" variant="light">
+                    <button className="the-menu-button"></button>
+                    <Navbar.Brand className="yoti" href="#" > Yoti-World</Navbar.Brand>
+                </Navbar>
+            </Container>
         </div>
     );
 }

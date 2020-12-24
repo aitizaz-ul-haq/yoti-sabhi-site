@@ -5,7 +5,7 @@ import React from 'react';
 import './Styles/pagesinmodal.css';
 
 // importing Bootstrap components---------------->
-import { Row, Col, Form } from 'react-bootstrap';
+import { Row, Col, Form, Container } from 'react-bootstrap';
 
 // importing react router modules---------------------------------------------->
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -58,34 +58,36 @@ function About() {
     return (
         <div>
             <h2>Scan</h2>
-            <Row>
-                <Col>
-                    <Form className="theform">
-                        <Form.Group controlId="formBasicEmail">
-                            <Form.Control type="email" placeholder="Given Name(s)" />
-                        </Form.Group>
+            <Container fluid="xs">
+                <Row>
+                    <Col>
+                        <Form className="theform">
+                            <Form.Group controlId="formBasicEmail">
+                                <Form.Control type="email" placeholder="Given Name(s)" />
+                            </Form.Group>
 
-                        <Form.Group controlId="formBasicPassword">
-                            <Form.Control type="password" placeholder="Family Name" />
-                        </Form.Group>
+                            <Form.Group controlId="formBasicPassword">
+                                <Form.Control type="password" placeholder="Family Name" />
+                            </Form.Group>
 
-                        <Form.Group controlId="formBasicEmail">
-                            <Form.Control type="email" placeholder="Date of Birth" />
-                        </Form.Group>
+                            <Form.Group controlId="formBasicEmail">
+                                <Form.Control type="email" placeholder="Date of Birth" />
+                            </Form.Group>
 
-                        <Form.Group controlId="formBasicPassword">
-                            <Form.Control type="password" placeholder="Address" />
-                        </Form.Group>
+                            <Form.Group controlId="formBasicPassword">
+                                <Form.Control type="password" placeholder="Address" />
+                            </Form.Group>
 
-                        <Form.Group controlId="formBasicPassword">
-                            <Form.Control type="password" placeholder="Photo Authentication" />
-                        </Form.Group>
-                    </Form>
-                </Col>
-                <Col>
-                    <Qrcode />
-                </Col>
-            </Row>
+                            <Form.Group controlId="formBasicPassword">
+                                <Form.Control type="password" placeholder="Photo Authentication" />
+                            </Form.Group>
+                        </Form>
+                    </Col>
+                    <Col>
+                        <Qrcode />
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 }

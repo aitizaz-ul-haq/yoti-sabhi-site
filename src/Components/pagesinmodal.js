@@ -80,7 +80,6 @@ function About() {
                         <Form.Group controlId="formBasicPassword">
                             <Form.Control type="password" placeholder="Photo Authentication" />
                         </Form.Group>
-
                     </Form>
                 </Col>
                 <Col>

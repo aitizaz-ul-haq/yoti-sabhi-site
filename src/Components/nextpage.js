@@ -72,6 +72,6 @@ function Nexty() {
     );
 }
 
-
+        
 
 export default Nexty;

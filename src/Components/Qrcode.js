@@ -10,7 +10,7 @@ function Qrcoding() {
         <QRNormal
             value="react-qrbtf"
             className="my-qrcode"
-            styles={{ svg: { width: "233px", height: "216px" } }}
+            styles={{ svg: { width: "200px", height: "200px" } }}
             type="round"
             size={50}
             opacity={80}

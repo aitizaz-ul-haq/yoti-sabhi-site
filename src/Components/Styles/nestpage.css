@@ -25,96 +25,131 @@
 .con-scan {
     padding: 0px;
     width: 527px;
-    
     height: 430px;
-   
-}
-
-.containsscanner {
-    
-   
 }
 
 .containsactual {
-   
     background-color: #26A8D4;
 }
 
 .yotiscanner {
-    /* border-radius: 25px; */
-    background-color: white;
-    width: 527px;
+    border-radius: 30px;
+    background-color: whitesmoke;
+    width: 528px;
     height: 430px;
     box-shadow:20px 20px 50px 15px grey;  
 }
 
-.con-actul {
+.conactul {
     background-color: #26A8D4;
-    width: 527px;
-   
-    height: 430px;
-}
-
-.modal-content {
-    
-    /* border-radius: 25px; */
-    margin-top: 119px;
-    background-color: #26A8D4;
-    width: 477px;
-
-    height: 349px;
-
+    border-radius: 0px 30px 30px 0px;
 }
 
 .scannerinhere {
-    /* border-radius: 32px; */
+    border-radius: 32px;
     background-color: cornsilk;
-    
     width: 233px;
-    height: 290px;
-        
-        position: absolute;
-        top: 0;
-        left: 0;
-        box-shadow: 5px 8px 50px 8px grey;  
-
+    height: 314px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 5px 8px 50px 8px grey;  
     margin-left: 246px;
     margin-top: 59px;
-
-
-       
 }
 
 .listitems {
-    color:gray;
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
+    font-weight: bold;
     font-size: 13px;
-    font-family: 'Roboto', sans-serif;
 }
 
 .yoti-Auth {
-
-    margin-top: 29px;
+    margin-top: 22px;
     margin-left: 56px;
-
 }
 
 .scanner-head {
-    /* border-radius: 25px; */
     width: 137px;
-    margin-top: 27px;
+    margin-top: 16px;
     margin-left: 54px;
+}
 
+.scanner-fonts {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 .yoti-row {
-    /* border-radius: 25px; */
-    /* width: 137px;
-    margin-top: 27px;
-    margin-left: 54px; */
+    border-radius: 25px;  
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.radiustest {
+    border-radius: 30px;
+    background-color: lightcoral;
+}
+
+.free {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.modal-content {
+    margin-top: 142px;
+}
+
+.theline {
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+.profile {
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    margin-bottom: 9px;
+}
+
+.thesamllline {
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
+    font-weight: bold;
+}
+
+.scanborder {
+    border: solid #26A8D4;
+    border-radius: 25px;
+    padding-left: 0px;
+    margin-left: 13px;
+    margin-top: 0px;
+    margin-right: 13px;
+    margin-bottom: 0px;
+}
+
+.fade.modal-backdrop.show {
+    background-color: white;
+}
+
+.bottomblue {
+    background-color: white;
+}
+
+.Refreshbtn {
+
+    margin-left: 88px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 
 }
 
-.unknown {
-    /* border-radius: 25px; */
+button.Refreshbtn.btn.btn-outline-info.btn-sm {
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
-

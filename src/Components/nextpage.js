@@ -4,12 +4,22 @@ import React from 'react';
 // importing bootstrap components-------------------------------->
 import { Navbar, Button, Card, Accordion, Modal, Container, Row, Col } from 'react-bootstrap';
 
+// importing font icons----------------------------------------->
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faPortrait } from '@fortawesome/free-solid-svg-icons';
+import { faSyncAlt } from '@fortawesome/free-solid-svg-icons';
+
 // importing style files------->
 import './Styles/nestpage.css';
 
 // importing components------------------>
-//import Pagesinmodal from './pagesinmodal';
 import Qrcode from './Qrcode';
+
+// importing images-------------------------------->
+import yotilogo from './Images/yotilogo.png';
 
 // rendering file------------->
 function Nexty() {
@@ -54,52 +64,56 @@ function Nexty() {
                             <br></br>
                                 <br></br>
                             Scan with Yoti to open your account &nbsp; &emsp; &emsp;<button onClick={showModal}>Display Modal</button>
-                                <Modal >
-                                    <Container fluid="xs" show={isOpen} onHide={hideModal}>
-                                        <div className="conatinsalot">
-
-
-                                            <Row xs={12} className="unknown">
-                                                <div className="yotiscanner">
-                                                    <Row xs={12} className="yoti-row">
-                                                        <Col xs={7} className="con-scan">
-                                                            <div className="containsscanner">
-                                                                <div className="yoti-Auth">
-                                                                    <h3>Yoti World</h3>
-                                                                    <small>is asking you to share</small>
-                                                                    <br />
-                                                                    <hr />
-                                                                    <h5 className="listitems">Given Name(s)</h5>
-                                                                    <hr />
-                                                                    <h5 className="listitems">Family Name</h5>
-                                                                    <hr />
-                                                                    <h5 className="listitems">Date of Birth</h5>
-                                                                    <hr />
-                                                                    <h5 className="listitems">Address</h5>
-                                                                    <hr />
-                                                                    <h5 className="listitems">Photo Authentication</h5>
-                                                                    <hr />
-                                                                    <h5 className="listitems">Remember My ID</h5>
-                                                                    <hr />
-                                                                </div>
+                                <Modal dialogClassName="modal-10w"
+                                    aria-labelledby="unknown"
+                                    show={isOpen}
+                                    onHide={hideModal}>
+                                    <Container fluid="xs">
+                                        <Row xs={12} className="unknown">
+                                            <div className="yotiscanner">
+                                                <Row xs={12} className="yoti-row">
+                                                    <Col xs={7} className="con-scan">
+                                                        <div className="containsscanner">
+                                                            <div className="yoti-Auth">
+                                                                <img className="profile" src={yotilogo} alt="notext" />
+                                                                <h3 className="free">Yoti World</h3>
+                                                                <small className="thesamllline ">is asking you to share</small>
+                                                                <hr className="theline"></hr>
+                                                                <h5 className="listitems"><FontAwesomeIcon icon={faAddressCard} /> Given Name(s)</h5>
+                                                                <hr className="theline"></hr>
+                                                                <h5 className="listitems"><FontAwesomeIcon icon={faAddressCard} /> Family Name</h5>
+                                                                <hr className="theline"></hr>
+                                                                <h5 className="listitems"><FontAwesomeIcon icon={faCalendarAlt} /> Date of Birth</h5>
+                                                                <hr className="theline"></hr>
+                                                                <h5 className="listitems"><FontAwesomeIcon icon={faHome} /> Address</h5>
+                                                                <hr className="theline"></hr>
+                                                                <h5 className="listitems"><FontAwesomeIcon icon={faPortrait} /> Photo Authentication</h5>
+                                                                <hr className="theline"></hr>
+                                                                <h5 className="listitems"><FontAwesomeIcon icon={faSyncAlt} /> Remember My ID</h5>
+                                                                <hr className="theline"></hr>
                                                             </div>
-                                                        </Col>
-                                                        <Col xs={5} className="con-actul">
-                                                            <div className="containsactual">
-
-                                                            </div>
-                                                        </Col>
-                                                        <div className="scannerinhere">
-                                                            <div className="scanner-head">
-                                                                <h5>Scan with the</h5>
-                                                                <h5>Yoti app:</h5>
-                                                            </div>
+                                                        </div>
+                                                    </Col>
+                                                    <Col xs={5} className="conactul">
+                                                        <Row xs={5} >
+                                                            <div className="bottomblue"></div>
+                                                        </Row>
+                                                    </Col>
+                                                    <div className="scannerinhere">
+                                                        <div className="scanner-head">
+                                                            <h5 className="scanner-fonts">Scan with the</h5>
+                                                            <h5 className="scanner-fonts">&nbsp; &emsp;Yoti app:</h5>
+                                                        </div>
+                                                        <div className="scanborder">
                                                             <Qrcode />
                                                         </div>
-                                                    </Row>
-                                                </div>
-                                            </Row>
-                                        </div>
+                                                        <div>
+                                                            <Button className="Refreshbtn" variant="outline-info" size="sm">Refresh</Button>
+                                                        </div>
+                                                    </div>
+                                                </Row>
+                                            </div>
+                                        </Row>
                                     </Container>
                                 </Modal>
                                 <br></br>
